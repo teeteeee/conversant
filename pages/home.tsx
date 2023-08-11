@@ -614,7 +614,7 @@ const Home: NextPage = () => {
                             <div className="tyn-qa-avatar">
                                 <div className="tyn-qa-avatar-wrap">
                                     <div className="tyn-media tyn-size-md">
-                                        <img src="images/avatar/bot-1.jpg" alt="" />
+                                        <Image src="images/avatar/bot-1.jpg" alt="" />
                                     </div>
                                 </div>
                             </div>

@@ -109,8 +109,6 @@ const Login = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="shortcut icon" href="images/favicon.ico" />
                 <title>Padd AI | ConnectMe | Chat Application HTML Template</title>
-                <link rel="stylesheet" href="/bundle1c4a.module.css" />
-                <link rel="stylesheet" href="/app1c4a.module.css" />
             </Head>
 
                 <main className="tyn-body">          
@@ -238,7 +236,8 @@ const Login = () => {
                                 </div>
                                  ) : (
                                     <>
-                                    <h3>Welcome, {session.user.name}!</h3>
+                                    <h3>Welcome, {session.user ? session.user.name : 'User'}!</h3>
+          
                                     <div className="mt-4">
                                     <Link href="/home"
                 
@@ -390,7 +389,7 @@ const Login = () => {
         <div className="tyn-quick-chat-head">
           <div className="tyn-media-group">
             <div className="tyn-media tyn-size-rg">
-              <img src="images/avatar/1.jpg" alt="" />
+              <Image src="images/avatar/1.jpg" alt="" />
             </div>
             <div className="tyn-media-col">
               <div className="tyn-media-row">
@@ -426,7 +425,7 @@ const Login = () => {
             <div className="tyn-reply-item incoming">
               <div className="tyn-reply-avatar">
                 <div className="tyn-media tyn-size-md tyn-circle">
-                  <img src="images/avatar/2.jpg" alt="" />
+                  <Image src="images/avatar/2.jpg" alt="" />
                 </div>
               </div>
               <div className="tyn-reply-group">
@@ -457,10 +456,10 @@ const Login = () => {
               <div className="tyn-reply-group">
                 <div className="tyn-reply-bubble">
                   <div className="tyn-reply-text">
-                    {" "}
+                    {/* {" "}
                     Yes, you can reset your password online. Go to the login
                     page, click on "Forgot Password," and follow the
-                    instructions to reset it.{" "}
+                    instructions to reset it.{" "} */}
                   </div>
                   {/* tyn-reply-text */}
                 </div>
@@ -472,7 +471,7 @@ const Login = () => {
             <div className="tyn-reply-item incoming">
               <div className="tyn-reply-avatar">
                 <div className="tyn-media tyn-size-md tyn-circle">
-                  <img src="images/avatar/2.jpg" alt="" />
+                  <Image src="images/avatar/2.jpg" alt="" />
                 </div>
               </div>
               <div className="tyn-reply-group">
@@ -530,8 +529,6 @@ const Login = () => {
       </div>
     </div>
   </div>
-            <script src="/assets/js/bundle1c4a.js"></script>
-            <script src="/assets/js/app1c4a.js"></script>
 
           </main>
     </div>
