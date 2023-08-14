@@ -588,6 +588,9 @@ const Home: NextPage = () => {
                                           <span className="small text-nowrap mt-n1">Clear History</span>
                                       </button>
                                   </li>
+                                  <li><button onClick={() => signOut()}>Sign out</button></li>
+                                  {/* <button onClick={() => signOut()}>Sign out</button> */}
+                                   
                               </ul>
                           </div>
                       </div>
@@ -614,7 +617,7 @@ const Home: NextPage = () => {
                             <div className="tyn-qa-avatar">
                                 <div className="tyn-qa-avatar-wrap">
                                     <div className="tyn-media tyn-size-md">
-                                        <Image src="images/avatar/bot-1.jpg" alt="" />
+                                        <Image src="/images/avatar/bot-1.jpg" alt="" width={2} height={100}/>
                                     </div>
                                 </div>
                             </div>

@@ -10,4 +10,5 @@ export default NextAuth({
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
+  secret: '17569351349574858539940355186136',
 });

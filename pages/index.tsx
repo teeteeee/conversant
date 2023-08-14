@@ -192,7 +192,8 @@ const Login = () => {
                                         onClick={handleLoginAndRedirect}
                                         >
                                         <Image 
-                                        src={googleLogo} alt='google logo' 
+                                        src={googleLogo} alt='google logo'  width={60} // Replace with the actual width of the image
+                                        height={100}
                                         />{' '}
                                         <Typography fontSize={'17px'}>Continue with Google</Typography>
                                     </SocialLogin>
@@ -257,7 +258,7 @@ const Login = () => {
                   <span>Start Talking</span>
                   </Link>
               </div>
-                                    {/* <button onClick={() => signOut()}>Sign out</button> */}
+                                    <button onClick={() => signOut()}>Sign out</button>
                                     </>
                             )}
                                 </div>
@@ -389,7 +390,7 @@ const Login = () => {
         <div className="tyn-quick-chat-head">
           <div className="tyn-media-group">
             <div className="tyn-media tyn-size-rg">
-              <Image src="images/avatar/1.jpg" alt="" />
+              <Image src="/images/avatar/1.jpg" alt="" width={60} height={100}/>
             </div>
             <div className="tyn-media-col">
               <div className="tyn-media-row">
@@ -425,7 +426,7 @@ const Login = () => {
             <div className="tyn-reply-item incoming">
               <div className="tyn-reply-avatar">
                 <div className="tyn-media tyn-size-md tyn-circle">
-                  <Image src="images/avatar/2.jpg" alt="" />
+                  <Image src="/images/avatar/2.jpg" alt="" width={60} height={100}/>
                 </div>
               </div>
               <div className="tyn-reply-group">
@@ -471,7 +472,7 @@ const Login = () => {
             <div className="tyn-reply-item incoming">
               <div className="tyn-reply-avatar">
                 <div className="tyn-media tyn-size-md tyn-circle">
-                  <Image src="images/avatar/2.jpg" alt="" />
+                  <Image src="/images/avatar/2.jpg" alt="" width={60} height={100}/>
                 </div>
               </div>
               <div className="tyn-reply-group">
